@@ -20,3 +20,9 @@ ORM - sql query / 근데 알아서 처리해줌
 
 단점 : 속도? / orm 이 제공하는 query 밖에 사용하지 못한다 
 
+
+
+$ python manage.py makemigrations
+
+$ python manage.py migrate
+
