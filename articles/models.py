@@ -16,4 +16,4 @@ class Article(models.Model):
 
     def __str__(self):
         return f'{self.id}번 글 - {self.title} : {self.content}'
-    
+                

@@ -56,3 +56,15 @@ model 에 접근하는 명령어?
 <model>.objects
 ```
 
+
+
+```bash
+$ python manage.py createsuperuser
+사용자 이름 (leave blank to use 'student'): jeesoo
+이메일 주소:
+Password:
+Password (again):
+```
+
+db 가 없으면 superuser 못 만듬
+
