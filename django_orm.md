@@ -68,3 +68,34 @@ Password (again):
 
 db 가 없으면 superuser 못 만듬
 
+
+
+django-extensions 설치
+
+```bash
+$ pip install django-extensions
+```
+
+설치 후 장고에 등록해줘야함 (settings.py)
+
+```python
+INSTALLED_APPS = [
+    # local apps
+    'articles',
+
+    # third party apps
+    'django_extensions',
+```
+
+자동 import 
+
+```bash
+$ python manage.py shell_plus
+```
+
+
+
+
+
+
+
