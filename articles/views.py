@@ -24,3 +24,18 @@ def create(request):
     article.save()
     # 사용자에게 저장이 완료되었다는 페이지를 보여준다. 
     return render(request, 'articles/create.html')
+
+
+def articles(request):
+    return render(request, 'articles/articles.html')
+
+
+def detail(request, article_pk):
+
+    article = Article.objects.get(pk=article_pk)
+    
+    contaxt = {
+        'article': article,
+    }
+    
+    return render(request, 'articles/detail.html', context)
